@@ -8,6 +8,11 @@ The executable file of the KassKMC simulation:
 
 KassPBato
 
+To run the executable file, type in ./kassPBato para1 para2 listname.
+para1 indicates the value of the weight constant w-alpha in the equation (3) of the paper between the electrostatic and hydrophobic interactions.
+para2 indicates the value of the weight constant w in the equation (2) of the paper between the physics-based and statistics-based potentials.
+listname indicates the list of protein complexes as inputs for simulation, the format of the listname file can be found below.
+For an example: ./kassPBato 04 06 pdb62BCHMKS, in which the value of w-alpha equals 0.4, the value of w equals 0.6 and pdb62BCHMKS.txt contains the list for all the protein complexes as inputs.
 
 
 2---------------------------------------------------------------------------------------->
