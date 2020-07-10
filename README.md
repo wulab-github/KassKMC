@@ -70,7 +70,7 @@ The list file has the following format:
 The first column indicates the PDB id of the protein complex. The number next indicates how many subunits in the first binding partner of the complex. 
 For instance, the first binding partner of 2VLN in the list above has one subunit, while the first binding partner of 2B4J has two subunits.
 The letters after the number indicate the chain ids of the subunits in the first binding partners.
-Similarly, tte number after these letters indicates how many subunits in the second binding partner of the complex, while the letters after this number indicate the chain ids of the subunits in the second binding partners. Afterwards, the real number after the chain ids of the second binding partner indicates the ionic strength in which the experimental association rate was measured. The unit of the ionic strength is M. Finally, the real numer in the last column is the experimentally measured value of association rate for the corresponding protein complex between the first and second binding partners which chain ids are indicated in the list. 
+Similarly, tte number after these letters indicates how many subunits in the second binding partner of the complex, while the letters after this number indicate the chain ids of the subunits in the second binding partners. Afterwards, the real number after the chain ids of the second binding partner indicates the ionic strength in which the experimental association rate was measured. The unit of the ionic strength is M. Finally, the real numer in the last column is the experimentally measured value of association rate for the corresponding protein complex between the first and second binding partners which chain ids are indicated in the list. The unit of the rates is per Molar per second. 
 
 
 5--------------------------------------------------->
@@ -105,7 +105,7 @@ The sample output from the simulation for the test system:
 
 Result_ResPB_rec_2VLN_A00_B00_WS04WK06.dat
 
-
+The output from the KassKMC for each protein complex contains 10000 rows, corresponding to the 10000 simulation trajectories. Each row is the output from one single trajectory which format is as follow:
 
     1  0      1000.00000        0.00000       11.47618       41.55275        8.65784    0       -2.40446
     2  1       335.00000        0.07895       12.04541       32.26528        5.03485    3      -12.18327
@@ -114,3 +114,7 @@ Result_ResPB_rec_2VLN_A00_B00_WS04WK06.dat
     5  0      1000.00000        0.00000       39.63525      107.46005       16.95219    0       -0.00072
 	......
 	......
+
+The first column above indicates the index of the simulation trajectory. The second column is the flag indicating whether the encounter complex in the corresponding trajectory is successfully formed or not. 1 means yes and 0 means no. The third column is the number of simulation steps. If the encounter complex forms, the simulation will be automatically terminated, otherwise it will reach the maximal simulation step (1000 steps). The fourth column is the percentage of native contacts observed by the end of each corresponding simulation trajectory. The fifth column is the distance between the binding sites of two proteins in the complexes observed by the end, with the unit of Angstrom. The sixth column is the distance between the mass center of two proteins in the complexes observed by the end, with the unit of Angstrom. The seventh column is the RMSD of the final configuration from the native complex observed by the end, with the unit of Angstrom. The eighth column is the number of native contacts formed by the end. Finally, the nineth column is the intermolecular energy of the final configuration, with the unit of kT. Based on counting how many encounter complexes are successfully formed among all the 10000 trajectories, we can calculate the association probability of the specific protein complex. Using the association probability (Pon), the association rate (kon) can be derived by the equation:
+	kon=105000*(10**(4*(pon-)/))
+The unit of the rates is per Molar per second. 
