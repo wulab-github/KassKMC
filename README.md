@@ -40,17 +40,18 @@ pdb62BCHMKS.txt
 
 The list file has the following format:
 
-2VLN 1 A 1 B 0.1 100000000.0
-
-1BRS 1 A 1 D 0.103 250000000.0 
-
-1UEA 1 B 1 A 0.23 200000.0	 
-
-1QA9 1 A 1 B 0.166 400000.0	 
-
-2B4J 2 A B 1 C 0.181 480000.0	
-
-......
+	2VLN 1 A 1 B 0.1 100000000.0
+	1BRS 1 A 1 D 0.103 250000000.0 
+	1UEA 1 B 1 A 0.23 200000.0	 
+	1QA9 1 A 1 B 0.166 400000.0	 
+	2B4J 2 A B 1 C 0.181 480000.0	
+	1SGN 1 E 1 I 0.26 1200000.0	 
+	1VFB 2 A B 1 C 0.15 1400000.0 
+	1FLE 1 E 1 I 0.25 3600000.0	 
+	1TLU 1 A 1 B 0.01 5600000.0  
+	1FFW 1 A 1 B 0.15 62000000.0 
+		......
+		......
 
 The first column indicates the PDB id of the protein complex. The number next indicates how many subunits in the first binding partner of the complex. 
 For instance, the first binding partner of 2VLN in the list above has one subunit, while the first binding partner of 2B4J has two subunits.
