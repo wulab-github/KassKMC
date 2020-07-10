@@ -97,7 +97,7 @@ The input files have the standard PDB format as following:
 				......
 				......
 
-They can be either downloaded from the Protein Data Bank, or computationally modeled. The input PDB structures require backbone heavy atoms, as well as sidechain heavy atoms. HOwever, the files might but not necessarily contain hydrogen atoms. If the original PDB files contain hydrogen atoms, you don't have to remove them. On the other hand, if the original PDB files don't contain hydrogen atoms, you don't have to add extra hydrogen atoms.
+They can be either downloaded from the Protein Data Bank, or computationally modeled. The input PDB structures require backbone heavy atoms, as well as sidechain heavy atoms. However, the files might but not necessarily contain hydrogen atoms. If the original PDB files contain hydrogen atoms, you don't have to remove them. On the other hand, if the original PDB files don't contain hydrogen atoms, you don't have to add extra hydrogen atoms.
 
 
 6--------------------------------------------------->
