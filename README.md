@@ -3,7 +3,7 @@ This program (KassKMC), uses kinetic Monte-Carlo simulation algorithm to calcula
 
 Following files are included in this package:
 
-1---------------------------------------------------------------------------------------->
+1----------------------------------------------------->
 The executable file of the KassKMC simulation: 
 
 KassPBato
@@ -15,7 +15,7 @@ listname indicates the list of protein complexes as inputs for simulation, the f
 For an example: ./kassPBato 04 06 pdb62BCHMKS, in which the value of w-alpha equals 0.4, the value of w equals 0.6 and pdb62BCHMKS.txt contains the list for all the protein complexes as inputs.
 
 
-2---------------------------------------------------------------------------------------->
+2--------------------------------------------------->
 Fortran source code for the KassKMC simulation algorithm:
 
 KassCal_PB_StatFF_ParaAuto_main.f
@@ -25,7 +25,7 @@ diag.f
 
 
 
-3--------------------------------------------------------------------------------------->
+3-------------------------------------------------->
 The energy parameters used in the simulation:
 
 3didPotential_ResInterfaceContact_04232018.dat
@@ -33,7 +33,7 @@ res_index.dat
 
 
 
-4--------------------------------------------------------------------------------------->
+4-------------------------------------------------->
 The list of the 62 protein complexes in the benchmark:
 
 pdb62BCHMKS.txt
@@ -53,18 +53,17 @@ The list file has the following format:
 The first column indicates the PDB id of the protein complex. The number next indicates how many subunits in the first binding partner of the complex. 
 For instance, the first binding partner of 2VLN in the list above has one subunit, while the first binding partner of 2B4J has two subunits.
 The letters after the number indicate the chain ids of the subunits in the first binding partners.
-Similarly, tte number after these letters indicates how many subunits in the second binding partner of the complex, while the letters after this number indicate the chain ids of the subunits in the second binding partners. Afterwards, the real number after the chain ids of the second binding partner indicates the ionic strength in which the experimental association rate was measured. The unit of the ionic strength is 
-. 
+Similarly, tte number after these letters indicates how many subunits in the second binding partner of the complex, while the letters after this number indicate the chain ids of the subunits in the second binding partners. Afterwards, the real number after the chain ids of the second binding partner indicates the ionic strength in which the experimental association rate was measured. The unit of the ionic strength is M. Finally, the real numer in the last column is the experimentally measured value of association rate for the corresponding protein complex between the first and second binding partners which chain ids are indicated in the list. 
 
 
-5--------------------------------------------------------------------------------------->
+5--------------------------------------------------->
 The sample PDB input for the test system:
 
 2VLN.pdb
 
 
 
-6--------------------------------------------------------------------------------------->
+6--------------------------------------------------->
 The sample output from the simulation for the test system:
 
 Result_ResPB_rec_2VLN_A00_B00_WS04WK06.dat
