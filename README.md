@@ -77,8 +77,8 @@ ATOM     11  CB  ILE A   7      -6.182  54.168   8.945  1.00 15.26           C
 ATOM     12  CG1 ILE A   7      -4.756  54.727   8.682  1.00 11.56           C  
 ATOM     13  CG2 ILE A   7      -7.217  54.705   7.959  1.00 14.47           C  
 ATOM     14  CD1 ILE A   7      -4.065  54.315   7.300  1.00 13.73           C  
-	......
-	......
+
+
 
 6--------------------------------------------------->
 The sample output from the simulation for the test system:
