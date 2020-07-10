@@ -37,6 +37,15 @@ The energy parameters used in the simulation:
 The first file contains all the energy parameters derived from the statistical potential
 It has the following format:
 
+	GLY GLY   3.000      3.000
+	ALA GLY   3.000      3.000
+	ALA ALA  -0.076      4.392
+	VAL GLY   3.000      3.000
+	......
+	......
+
+The first two columns are the names of the two amino acids that form a contact. The third column is the strength of the interaction between the specific two types of amino acids indicating in the first two columns in the unit of kT, and the fourth column is the distance cutoff of the interaction.
+
 
 4-------------------------------------------------->
 The list of the 62 protein complexes in the benchmark:
