@@ -26,14 +26,16 @@ Fortran source code for the KassKMC simulation algorithm:
 	rs.f
 	diag.f
 
-The first file is the FORTRAN77 codes for the main simulation program of the Monte-Carlo algorithm. The second file contains the FORTRAN77 subroutine deals with the rigid body superposition between two odjects. The last two files contain the FORTRAN77 subrountines deal with the matrix diagonization.
+The first file is the FORTRAN77 codes for the main simulation program of the Monte-Carlo algorithm. The second file contains the FORTRAN77 subroutine deals with the rigid body superposition between two odjects. The last two files contain the FORTRAN77 subrountines deal with the matrix diagonalization.
 
 3-------------------------------------------------->
 The energy parameters used in the simulation:
 
-3didPotential_ResInterfaceContact_04232018.dat
-res_index.dat
+	3didPotential_ResInterfaceContact_04232018.dat
+	res_index.dat
 
+The first file contains all the energy parameters derived from the statistical potential
+It has the following format:
 
 
 4-------------------------------------------------->
