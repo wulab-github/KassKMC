@@ -63,7 +63,36 @@ The sample PDB input for the test system:
 
 2VLN.pdb
 
+ATOM      1  N   SER A   6      -9.008  52.410  14.065  1.00 22.23           N  
 
+ATOM      2  CA  SER A   6      -8.896  52.304  12.583  1.00 20.74           C  
+
+ATOM      3  C   SER A   6      -7.955  53.416  12.154  1.00 18.44           C  
+
+ATOM      4  O   SER A   6      -7.592  54.266  12.955  1.00 18.02           O  
+
+ATOM      5  CB  SER A   6     -10.289  52.471  11.966  1.00 22.99           C  
+
+ATOM      6  OG  SER A   6     -10.554  53.797  11.560  1.00 26.51           O  
+
+ATOM      7  N   ILE A   7      -7.603  53.435  10.874  1.00 14.65           N  
+
+ATOM      8  CA  ILE A   7      -6.620  54.443  10.387  1.00 13.96           C  
+
+ATOM      9  C   ILE A   7      -7.187  55.856  10.588  1.00 14.95           C  
+
+ATOM     10  O   ILE A   7      -6.438  56.802  10.792  1.00 14.72           O  
+
+ATOM     11  CB  ILE A   7      -6.182  54.168   8.945  1.00 15.26           C  
+
+ATOM     12  CG1 ILE A   7      -4.756  54.727   8.682  1.00 11.56           C  
+
+ATOM     13  CG2 ILE A   7      -7.217  54.705   7.959  1.00 14.47           C  
+
+ATOM     14  CD1 ILE A   7      -4.065  54.315   7.300  1.00 13.73           C  
+
+......
+......
 
 6--------------------------------------------------->
 The sample output from the simulation for the test system:
