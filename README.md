@@ -38,6 +38,23 @@ The list of the 62 protein complexes in the benchmark:
 
 pdb62BCHMKS.txt
 
+The list file has the following format:
+
+2VLN 1 A 1 B 0.1 100000000.0
+
+1BRS 1 A 1 D 0.103 250000000.0 
+
+1UEA 1 B 1 A 0.23 200000.0	 
+
+1QA9 1 A 1 B 0.166 400000.0	 
+
+2B4J 2 A B 1 C 0.181 480000.0	
+
+The first column indicates the PDB id of the protein complex. The number next indicates how many subunits in the first binding partner of the complex. 
+For instance, the first binding partner of 2VLN in the list above has one subunit, while the first binding partner of 2B4J has two subunits.
+The letters after the number indicate the chain ids of the subunits in the first binding partners.
+Similarly, tte number after these letters indicates how many subunits in the second binding partner of the complex, while the letters after this number indicate the chain ids of the subunits in the second binding partners. Afterwards, the real number after the chain ids of the second binding partner indicates the ionic strength in which the experimental association rate was measured. The unit of the ionic strength is 
+. 
 
 
 5--------------------------------------------------------------------------------------->
