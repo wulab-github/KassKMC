@@ -78,6 +78,8 @@ The sample PDB input for the test system:
 
 2VLN.pdb
 
+The input files have the standard PDB format as following:
+
 	ATOM      1  N   SER A   6      -9.008  52.410  14.065  1.00 22.23           N  
 	ATOM      2  CA  SER A   6      -8.896  52.304  12.583  1.00 20.74           C  
 	ATOM      3  C   SER A   6      -7.955  53.416  12.154  1.00 18.44           C  
@@ -94,6 +96,8 @@ The sample PDB input for the test system:
 	ATOM     14  CD1 ILE A   7      -4.065  54.315   7.300  1.00 13.73           C  
 				......
 				......
+
+They can be either downloaded from the Protein Data Bank, or computationally modeled. The input PDB structures require backbone heavy atoms, as well as sidechain heavy atoms. HOwever, the files might but not necessarily contain hydrogen atoms. If the original PDB files contain hydrogen atoms, you don't have to remove them. On the other hand, if the original PDB files don't contain hydrogen atoms, you don't have to add extra hydrogen atoms.
 
 
 6--------------------------------------------------->
