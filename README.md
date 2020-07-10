@@ -50,6 +50,8 @@ The list file has the following format:
 
 2B4J 2 A B 1 C 0.181 480000.0	
 
+......
+
 The first column indicates the PDB id of the protein complex. The number next indicates how many subunits in the first binding partner of the complex. 
 For instance, the first binding partner of 2VLN in the list above has one subunit, while the first binding partner of 2B4J has two subunits.
 The letters after the number indicate the chain ids of the subunits in the first binding partners.
